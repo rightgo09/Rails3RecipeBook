@@ -1,4 +1,6 @@
 Rails3RecipeBook::Application.routes.draw do
+  resources :dlogs
+
   get "entry/index"
 
   get "entry/show"

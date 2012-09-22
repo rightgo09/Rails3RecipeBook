@@ -1,0 +1,25 @@
+<h1>Listing dlogs</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dlogs.each do |dlog| %>
+  <tr>
+    <td><%= dlog.user_id %></td>
+    <td><%= dlog.title %></td>
+    <td><%= link_to 'Show', dlog %></td>
+    <td><%= link_to 'Edit', edit_dlog_path(dlog) %></td>
+    <td><%= link_to 'Destroy', dlog, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dlog', new_dlog_path %>
