@@ -1,4 +1,8 @@
 Rails3RecipeBook::Application.routes.draw do
+  get "entry/index"
+
+  get "entry/show"
+
   resources :blogs
 
   # The priority is based upon order of creation:
