@@ -7,6 +7,7 @@ class DlogsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @dlogs }
+      format.json { render :json => @dlogs }
     end
   end
 
